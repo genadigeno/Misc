@@ -28,7 +28,7 @@
 			$pagination .= '<li><a href="?pn='.$prev.'">Prev</a></li>';
 			for($i = $current - 4; $i < $current; $i++){
 				if($i > 0){
-					$pagination .= '<li><a href="?pn='.$i.'"></a></li>';
+					$pagination .= '<li><a href="?pn='.$i.'">'.$i.'</a></li>';
 				}
 			}
 		}
