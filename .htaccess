@@ -1,2 +1,2 @@
 RewriteEngine on
-RewriteRule ^([^/]+)/? index.php?url=$1 [L,QSA]
+RewriteRule ^([^/]+)/? index.jsp?url=$1 [L,QSA]
