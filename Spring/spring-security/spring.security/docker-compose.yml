@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+    db:
+        image: "mysql:5.7"
+        container_name: "conference_Security"
+        ports:
+            - "3306:3306"
+        volumes:
+            - "C:/Users/GENO/Desktop/d/data:/var/lib/mysql"
+        environment:
+            MYSQL_ROOT_PASSWORD: pass
+            MYSQL_DATABASE: conference_Security
