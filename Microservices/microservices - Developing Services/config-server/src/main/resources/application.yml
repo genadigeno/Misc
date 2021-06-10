@@ -1,0 +1,22 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /
+
+spring:
+  cloud:
+    config:
+      server:
+        encrypt:
+          enabled: false
+        git:
+          uri: https://github.com/genadigeno/config-server.git
+          search-paths:
+            - 'station*'
+          repos:
+            perf:
+              pattern:
+                - "*/perf"
+              uri: https://github.com/genadigeno/performance-test.git
+              search-paths:
+                - 'station*'
